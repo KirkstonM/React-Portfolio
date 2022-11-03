@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.eb479b30.css",
+    "main.js": "/React-Portfolio/static/js/main.17ec1952.js",
+    "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Aboutpage.jpg": "/React-Portfolio/static/media/Aboutpage.9a0f426e2db193a2e9b6.jpg",
+    "static/media/Homepage.jpg": "/React-Portfolio/static/media/Homepage.66ef99cbdedb0d9e997d.jpg",
+    "static/media/coolvetica rg.ttf": "/React-Portfolio/static/media/coolvetica rg.857acc35e07cc59dfcb4.ttf",
+    "static/media/helveticaneue.ttf": "/React-Portfolio/static/media/helveticaneue.9dbbc9db793f1cc4fc13.ttf",
+    "static/media/labelleaurore.ttf": "/React-Portfolio/static/media/labelleaurore.e67e4a43ef5ad09a7b9c.ttf",
+    "static/media/contactPage.jpg": "/React-Portfolio/static/media/contactPage.1e37a60d2941f893f55e.jpg",
+    "static/media/revicons.eot": "/React-Portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/React-Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/React-Portfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/React-Portfolio/index.html",
+    "main.eb479b30.css.map": "/React-Portfolio/static/css/main.eb479b30.css.map",
+    "main.17ec1952.js.map": "/React-Portfolio/static/js/main.17ec1952.js.map",
+    "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb479b30.css",
+    "static/js/main.17ec1952.js"
+  ]
+}
