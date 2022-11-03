@@ -1,0 +1,28 @@
+@import 'animate.css';
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../Fonts/helveticaneue.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("../Fonts/labelleaurore.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../Fonts/coolvetica rg.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+input,
+textarea {
+  font-family: "Helvetica Neue", sans-serif;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:  0;
+}

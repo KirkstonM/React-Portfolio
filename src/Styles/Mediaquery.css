@@ -1,0 +1,135 @@
+
+/*SMALL*/
+
+@media only screen and (max-width: 576px) { 
+    /* CARDS CONTAINER*/
+    .card-container{
+        width: 20rem;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project h3::before{
+        left: 9rem;
+    }
+    .skill-box h3::before{
+        left: 5rem;
+      }
+      .project .btn-group .btn{
+        letter-spacing: 0.1rem;
+    }
+
+    /* SKILLS SECTION */
+    .skill-slider h5{
+        font-size: 1rem;
+    }
+
+    h3::before{
+        margin-left: -4rem;
+    }
+    h3::after{
+        margin-left: 2rem;
+    }
+
+    .stage-cube-cont{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    /*NAVBAR*/
+    .social-icons{
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .navbar-links a{
+        text-align: center;
+        font-variant: small-caps;
+    }
+
+    /*HEADER*/
+     h1,h2, .application-btn{
+        margin-left: 2rem;  
+    }
+    h1, h2{
+        font-weight: bolder;
+    }
+    .text-zone{
+        position: relative;
+        z-index: 99;
+        padding-bottom: 8rem;
+    }
+
+     .astro-image{
+        position: absolute;
+        top: 10rem;
+        left: 8rem; 
+        opacity: 0.6; 
+    } 
+  }
+
+
+
+
+  /*============MEDIUM==================*/
+
+  @media only screen and (max-width: 768px) and (min-width: 576px){
+    .project h3::before, .skill-box h3::before{
+        left: 10rem;
+      }
+      .text-zone{
+        position: relative;
+        z-index: 99;
+        padding-bottom: 8rem;
+    }
+      .astro-image{
+        position: absolute;
+        top: 10rem;
+        right: -3rem; 
+    } 
+    .navbar-links a{
+        text-align: center;
+        font-variant: small-caps;
+    }
+  }
+
+/*============LARGE==================*/
+  @media only screen and (max-width: 1100px) and (min-width: 768px){
+    .project h3::before, .skill-box h3::before{
+        left: 20rem;
+      }
+      .navbar-links a{
+        text-align: center;
+        font-variant: small-caps;
+    }
+    .social-icons{
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+  }
+
+  /*============MOBILE==================*/
+  @media only screen and (max-width: 460px){
+   
+    .cubespinner{
+        margin-left: -2.8rem;
+    }
+
+    .navigation-bar{
+        width: 100vw;
+        position: fixed;
+    }
+    .astro-image{
+        position: absolute;
+        top: 10rem;
+        left: 8rem; 
+        opacity: 0.6; 
+        width: 65%;
+    }
+  }
+
+
+
+  

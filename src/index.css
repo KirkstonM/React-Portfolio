@@ -1,0 +1,601 @@
+/*====DEFAULT CSS=====*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body{
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background: #050505 !important;
+    color:  white !important;
+}
+
+
+/****************    NAVBAR SECTION  *************************/
+.navigation-bar{
+    background-color: rgb(47, 45, 51);
+    color: white;
+}
+.logo-image{
+    width: 3rem;
+}
+
+.navbar-links a{
+    padding: .5em .8em;
+    color: rgba(185, 181, 181, 0.986);
+    position: relative;
+    text-decoration: none;
+    font-size: 13zpx;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.navbar-links a:active{
+    color: green;
+}
+.navbar-links a::before,
+.navbar-links a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.navbar-links a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.navbar-links a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.navbar-links a:hover:before,
+.navbar-links a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.navbar-links a:hover {
+  color: #ffee10;
+}
+
+.navbar-text .social-icons a{
+    border: 1px solid white;
+    margin-right: 1rem;
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+.navbar-text .social-icons a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+  .navbar-text .social-icons a:hover {
+    color: #ffee10;
+    box-shadow: 0 0 15px #ffee10;
+    text-shadow: 0 0 15px #ffee10;
+  }
+
+  .navigation-bar{
+    width: 100vw;
+}
+
+
+/****************    HEADER SECTION  *************************/
+
+.banner{
+    margin-top: 0;
+    padding: 200px 0 100px 0;
+    background-image: url('../public/images/Component-Images/Homepage.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+}
+
+h1::before{
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #ffd700;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -20px;
+    left: 15px;
+    opacity: 0.6;
+  }
+   
+  h1::after{
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #ffd700;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 20px;
+    animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
+  }
+
+  h2{ /*fix the delay*/
+    color: #94f03e;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: rotateInDownLeft 1.5s 2.8s backwards;
+  }
+.image-container{
+    display: block;
+    animation: backInDown;
+}
+.astro-image{
+    width: 27rem;
+    display: inline-block;
+    animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+   
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+/*use the animation css to set animation*/
+.application-btn{
+    font-weight: 700;
+    color: rgb(236, 233, 54);
+    background: linear-gradient(to right, rgb(128, 192, 31) 50%,  rgb(53, 52, 52) 50%);
+    padding: 5px 40px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 2px solid greenyellow;
+    animation: zoomInDown 3s 2.5s backwards;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .4s ease-out;
+    
+}
+
+.application-btn:hover{
+    background-position: left bottom;
+    color: rgb(29, 112, 236);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/****************    ABOUT SECTION  *************************/
+.about{
+    padding-bottom: 20rem;
+    position: relative;
+    background-image: url('../public/images/Component-Images/Aboutpage.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-header{
+    text-align: center;
+    padding: 2rem;
+}
+.about-header h3{
+    font-size: 3rem;
+}
+.self-text{
+    font-size: 1.1rem;
+    font-style: italic;
+}
+h3::before{
+    content: '<h3>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #ffd700;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -20px;
+    left: 38%;
+    opacity: 0.6;
+  }
+   
+  h3::after{
+    content: '<h3/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #ffd700;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 3.5rem;
+    margin-left: 3.5rem;
+    animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
+  }
+
+.stage-cube-cont{
+    margin-left: 8rem;
+}
+.cubespinner{
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% -100px);
+}
+
+.cubespinner img{
+    width: 100%;
+}
+
+.cubespinner div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.4);
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px lightyellow ;
+}
+
+.face1{
+    transform: translateZ(100px);
+}
+.face2{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.face3{
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.face4{
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.face5{
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.face6{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+@keyframes spincube {
+    from,
+    to{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16%{
+        transform: rotateY(-90deg);
+    }
+    33%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50%{
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66%{
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+    83%{
+        transform: rotateY(90deg);
+    }
+}
+
+/****************    SKILLS SECTION  *************************/
+.skill{
+    padding: 0 0 50px 0;
+    position: relative;
+}
+.skill-box {
+    background: #151515;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+  }
+  .skill-box h3 {
+    font-size: 45px;
+    font-weight: 700;
+   text-align: center;
+   margin-bottom: 4rem;
+  }
+  .skill-box h3::before{
+    margin-left: 2rem;
+  }
+
+  .skill-box h3::after{
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .skill-box p {
+      color: #B8B8B8;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 1.5em;
+      margin: 14px 0 75px 0;
+  }
+  .skill-slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .skill-slider .skill-item img {
+    width: 50%;
+    margin: 0 auto 15px auto;
+  }
+  /****************    PROJECTS SECTION  *************************/
+
+  .project{
+    padding: 80px 0;
+    position: relative;
+    background-image: url('../public/images/Component-Images/Aboutpage.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  .project h3 {
+      font-size: 45px;
+      font-weight: 700;
+     text-align: center;
+     margin-bottom: 4rem;
+  }
+
+  .project h3::after{
+        margin-top: 2rem;
+        margin-left: 2rem;
+  }
+  .project p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 56%;
+  }
+
+  .project button{
+  background: linear-gradient(to right, rgb(14, 117, 201) 50%,  rgb(53, 52, 52) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  }
+
+  .project button:hover{
+    background-position: left bottom;
+  }
+
+  @keyframes tabs {
+    from{
+        background-color: green;
+        transform: translateX(25%);
+    }
+    to{
+        background-color: red;
+    }
+  }
+  
+.project .btn-group{
+   border: 1px solid white;
+   width: 70%;
+   transform: translateX(25%);
+   border-radius: 50px;
+    overflow: hidden;
+}
+
+.project .btn-group .btn{
+    border-right: 1px solid white;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 500;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+
+.grid-container{
+    max-height: 40rem;
+    overflow: auto;
+    scroll-behavior: smooth; 
+}
+
+.grid-container::-webkit-scrollbar{
+    width: 0;
+}
+
+.card-container{
+    box-shadow: 2px 2px 5px #aaaaaa;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,0.5) 100%
+      );
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: .5s ease;
+}
+  
+.card-container:hover .overlay{
+    height: 100%;
+}
+
+.card-container h6{
+    margin-top: 1rem;
+    color: rgb(19, 151, 63);
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.overlay .text {
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/****************    CONTACT SECTION  *************************/
+
+.contact-section{
+    background-image: url('../public/images/Component-Images/contactPage.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact{
+    padding: 40px 5px 40px 5px;
+    border-radius: 1rem;
+}
+
+.contact h4 {
+	font-size: 45px;
+	font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 8px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .contact form input:focus, .contact form textarea:focus {
+    background: rgba(255, 255, 255, 1);
+    color: #121212;
+  }
+
+  .contact form input::placeholder, .contact form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .contact form button {
+    font-weight: 700;
+    color: rgb(25, 192, 142);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 40px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: all 0.15s ease;
+  }
+
+  .contact form button:hover{
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  } 
+  .contact .mail-confirmation{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bolder;
+  }
+
+  .contact .mail-error{ 
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: red;
+    font-weight: bolder;
+  }
+
+/****************   FOOTER SECTION *************************/
+
+.footer{
+background-image: url('../public/images/Component-Images/Aboutpage.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo a{
+  text-decoration: none;
+}
+
+.end a{
+    color: white;
+}
+
+.end p{
+    text-align: center;
+    color: grey;
+    margin-top: 1rem;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.social-icon a:hover{
+    color: yellow;
+}
