@@ -53,7 +53,7 @@ setLetterClass('text-animate-hover')
                  </Col>
                     <Col xs={12} md={6} xl={5}>
                         <div className='image-container mt-4'>
-                    <img src='.images/component-Images/banner-image.png' className='astro-image' alt='astro'/> 
+                    <img src='../images/Component-Images/banner-image.png' className='astro-image' alt='astro'/> 
                     </div>
                     </Col>
                 </Row>
